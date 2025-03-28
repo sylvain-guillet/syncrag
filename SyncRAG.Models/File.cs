@@ -1,4 +1,5 @@
-﻿namespace SyncRAG.Models;
+﻿// ReSharper disable ConvertToPrimaryConstructor
+namespace SyncRAG.Models;
 
 public class File : Entry
 {

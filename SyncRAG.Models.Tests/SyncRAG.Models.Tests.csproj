@@ -7,6 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+      <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.13.0" />
       <PackageReference Include="xunit" Version="2.9.3" />
       <PackageReference Include="xunit.runner.visualstudio" Version="3.0.2">
         <PrivateAssets>all</PrivateAssets>
@@ -16,6 +17,13 @@
 
     <ItemGroup>
       <ProjectReference Include="..\SyncRAG.Models\SyncRAG.Models.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="LocalFiles\MyFile.txt" />
+      <Content Include="LocalFiles\MyFile.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Content>
     </ItemGroup>
 
 </Project>
